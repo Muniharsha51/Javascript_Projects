@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel:wght@500;800&family=Ysabeau+SC:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;  
+}
+.main{
+    width: 100%;
+    height: 60%;
+    background: url("back.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Cinzel', serif;
+    font-family: 'Ysabeau SC', sans-serif;
+    margin: 0px;
+}
+button{
+    margin-top: 0px;
+    /* margin-left: 100px; */
+    border: none;
+    background-color: #00BFFF;
+    height: 29px;
+    width: 90px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+#butt{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        
+            <div class="in">
+                    <img class="gif-image" src="https://gregoryonlinestores.com/wp-content/uploads/2023/03/32b6f2aeeb2d21c5a29382721cdc67f7.gif" alt="GIF Description">
+                    
+            </div>
+            <div class="in">
+                <img class="gif-image" src="https://cdn.dribbble.com/users/2140642/screenshots/4281297/rf_sucess_v3.gif" alt="GIF Description">
+        </div>
+    </div>
+    <h2 style="text-align: center;">Congratulations</h3><br>
+    <p style="text-align: center;">Order Placed Successfully</p> <br>
+    <button id="butt">Home Page</button>
+    
+    <script>
+        let btnGetting=document.getElementsByTagName("button")
+        btnGetting[0].addEventListener("click",()=>{
+            window.location.assign("./index.html")
+        })
+    </script>
+</body>
+</html>
